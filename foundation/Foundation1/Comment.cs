@@ -2,17 +2,17 @@ using System;
 
 class Comment
 {
-    private string commenterName;
-    private string text;
+    private string _commenterName;
+    private string _text;
 
     public Comment(string commenterName, string text)
     {
-        this.commenterName = commenterName;
-        this.text = text;
+        _commenterName = commenterName;
+        _text = text;
     }
 
     public void DisplayComment()
     {
-        Console.WriteLine($"{commenterName}: {text}");
+        Console.WriteLine($"{_commenterName}: {_text}");
     }
 }
